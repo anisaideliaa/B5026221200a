@@ -1,0 +1,34 @@
+body{
+    background-color:rgb( 213, 245, 235);
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hargafinal{
+    font-weight: bold;
+    color: brown;
+}
+
+a:link{
+    text-decoration: none;
+    color: green;
+}
+a:visited{
+    text-decoration: none;
+    color: green;  
+}
+a:hover{
+    text-decoration: none;
+    color:black; 
+    font-weight: bold;
+}   
+.profilepicture{
+    border-radius: 50%;
+}
+.photoframe{
+    border-radius: 25px;
+    border: 2px salmon;
+    padding: 15px; /*jarak isi dengan border*/
+    width: 510px; /*jika tidak diset akan full 1 halaman*/
+}
+    
