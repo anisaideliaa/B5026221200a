@@ -12,6 +12,8 @@
 
 	<br/>
 	<br/>
+	<br/>
+	<br/>
 
 	<form action="/pegawai/store" method="post">
 		{{ csrf_field() }}
