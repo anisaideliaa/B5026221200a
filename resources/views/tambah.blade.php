@@ -24,7 +24,6 @@
 		<input type="submit" value="Simpan Data">
 	</form>
 
-
-
+    
 </body>
 </html>
