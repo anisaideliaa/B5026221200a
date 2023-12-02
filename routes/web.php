@@ -90,3 +90,6 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+
+Route::get('/pegawai/views/{id}','App\Http\Controllers\PegawaiController@views');
+
