@@ -21,8 +21,8 @@
                 <div class="row justify-content-center">
                     <div class="card-group">
                         <div class="card" style="width:400px">
-                            <img src="https://i.pinimg.com/564x/0f/14/95/0f14957ed21689419a4e960be027708c.jpg"
-                                alt="jpg">
+                            {{-- <img src="https://i.pinimg.com/564x/0f/14/95/0f14957ed21689419a4e960be027708c.jpg"
+                                alt="jpg"> --}}
                             <!-- Content for the first card -->
                         </div>
 
@@ -57,16 +57,16 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row align-items-center">
-                                    <div class="col-sm-4 offset-sm-4">
-                                        <a href="/pegawai" class="btn btn-success">Oke</a>
-                                    </div>
+                                <div class="d-flex justify-content-center">
+                                    {{-- <div class="col-sm-4 offset-sm-4"> --}}
+                                    <a href="/pegawai" class="btn btn-info">OK</a>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <br>
 
