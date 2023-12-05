@@ -47,8 +47,8 @@
 
         <div class="form-group row align-items-center">
             <div class="col-sm-4 offset-sm-4">
-                <input type="submit" class="btn btn-primary" value="Simpan Data">
-                <a href="/pegawai" class="btn btn-secondary">Kembali</a>
+                {{-- <input type="submit" class="btn btn-primary" value="Simpan Data"> --}}
+                <a href="/keranjangbelanja" class="btn btn-secondary">Kembali</a>
             </div>
         </div>
         <br>
