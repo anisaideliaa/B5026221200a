@@ -33,7 +33,7 @@
                 <a href="/keranjangbelanja/hapus/{{ $p->ID }}" class="btn btn-danger">Batal</a>
             </td>
         </tr>
-    @endforeach
-</table>
+        @endforeach
+    </table>
 
 @endsection

@@ -87,10 +87,7 @@ Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
 Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
 Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
-
-
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
-
 Route::get('/pegawai/views/{id}','App\Http\Controllers\PegawaiController@views');
 
 //Route CRUD belanja
@@ -105,3 +102,11 @@ Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@indexnilai');
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiController@tambah');
 Route::post('/nilaikuliah/storenilai','App\Http\Controllers\NilaiController@storenilai');
 
+//route CRUD Sepatu
+Route::get('/sepatu','App\Http\Controllers\SepatuController@indexSepatu');
+Route::get('/sepatu/tambahSepatu','App\Http\Controllers\SepatuController@tambahSepatu'); 
+Route::post('/sepatu/store','App\Http\Controllers\SepatuController@store');
+Route::get('/sepatu/hapus/{id}','App\Http\Controllers\SepatuController@hapus');
+Route::get('/sepatu/editSepatu/{id}','App\Http\Controllers\SepatuController@editSepatu');
+Route::post('/sepatu/update','App\Http\Controllers\SepatuController@update');
+Route::get('/sepatu/cari','App\Http\Controllers\SepatuController@cari');

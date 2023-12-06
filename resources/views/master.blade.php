@@ -13,9 +13,9 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">PWEB B</a>
+  <a class="navbar-brand" href="#">PWEB B / Anisa Fatin Idelia - 5026221200 / Data Sepatu</a>
 
-  <!-- Links -->
+  {{-- <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">Link 1</a>
@@ -35,7 +35,7 @@
         <a class="dropdown-item" href="#">Link 3</a>
       </div>
     </li>
-  </ul>
+  </ul> --}}
 </nav>
 <br>
 
