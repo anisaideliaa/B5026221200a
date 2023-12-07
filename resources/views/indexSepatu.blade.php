@@ -35,9 +35,17 @@
 			<td>{{ $p->sepatu_stocksepatu }}</td>
 		    <td>
                     @if ($p->sepatu_tersedia == 'y')
-                    Tersedia
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="" checked disabled>
+                        </label>
+                      </div>
                     @else
-                    Tidak tersedia
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="" disabled>
+                        </label>
+                      </div>
                     @endif
 
 

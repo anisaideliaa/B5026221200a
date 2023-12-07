@@ -17,13 +17,13 @@
             {{ csrf_field() }}
             {{-- <input type="hidden" name="id" value="{{ $p->sepatu_kodesepatu }}"> <br /> --}}
 
-            <div class="form-group row align-items-center">
+            {{-- <div class="form-group row align-items-center">
                 <label for="kodesepatu" class="col-form-label col-sm-4 text-right">Kode Sepatu:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" placeholder="Masukkan Kode Sepatu" id="kodesepatu"
                         name="kodesepatu"  value="{{ $p->sepatu_kodesepatu }}">
                 </div>
-            </div>
+            </div> --}}
 
             <div class="form-group row align-items-center">
                 <label for="merksepatu" class="col-form-label col-sm-4 text-right">Merk Sepatu:</label>
