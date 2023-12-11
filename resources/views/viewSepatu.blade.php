@@ -1,0 +1,68 @@
+@extends('master')
+
+@section('title', 'Data Sepatu')
+
+@section('konten')
+
+    <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+    <h3>Edit Sepatu</h3>
+
+    {{-- <a href="/pegawai"> Kembali</a> --}}
+
+    <br />
+    <br />
+
+    @foreach ($sepatu as $p)
+        <form action="/sepatu/update" method="post">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value="{{$p->sepatu_kodesepatu}}"> <br />
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card-group">
+                        <div class="card" style="width:400px">
+                            {{-- <img src="https://i.pinimg.com/564x/0f/14/95/0f14957ed21689419a4e960be027708c.jpg"
+                                alt="jpg"> --}}
+                            <!-- Content for the first card -->
+                        </div>
+
+                        <div class="card body" style="width:400px">
+                            <div class="card-body">
+
+                                <div class="form-group row align-items-center">
+                                    <label for="nama" class="col-form-label col-sm-4 text-right">Merk Sepatu:</label>
+                                    <div class="col-sm-8">
+                                        {{ $p->sepatu_merksepatu }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label for="jabatan" class="col-form-label col-sm-4 text-right">Stock Sepatu:</label>
+                                    <div class="col-sm-8">
+                                        {{ $p->sepatu_stocksepatu }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group row align-items-center">
+                                    <label for="umur" class="col-form-label col-sm-4 text-right">Ketersedian Sepatu:</label>
+                                    <div class="col-sm-8">
+                                        {{ $p->sepatu_tersedia }}
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    {{-- <div class="col-sm-4 offset-sm-4"> --}}
+                                    <a href="/sepatu" class="btn btn-info">OK</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+
+        </form>
+    @endforeach
+@endsection

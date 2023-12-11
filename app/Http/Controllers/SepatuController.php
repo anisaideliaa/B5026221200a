@@ -84,4 +84,12 @@ class SepatuController extends Controller
 		return view('indexSepatu',['sepatu' => $sepatu,'cari'=> $cari]);
 
 	}
+    public function views($id)
+	{
+		// mengambil data pegawai berdasarkan id yang dipilih
+		$sepatu = DB::table('sepatu')->where('sepatu_kodesepatu',$id)->get();
+		// passing data pegawai yang didapat ke view view.blade.php
+		return view('viewSepatu',['sepatu' => $sepatu]);
+
+	}
 }

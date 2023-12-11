@@ -13,7 +13,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">PWEB B / Anisa Fatin Idelia - 5026221200 / Data Sepatu</a>
+  <a class="navbar-brand" href="#">Karyawan</a>
 
   {{-- <!-- Links -->
   <ul class="navbar-nav">

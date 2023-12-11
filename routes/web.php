@@ -104,9 +104,20 @@ Route::post('/nilaikuliah/storenilai','App\Http\Controllers\NilaiController@stor
 
 //route CRUD Sepatu
 Route::get('/sepatu','App\Http\Controllers\SepatuController@indexSepatu');
-Route::get('/sepatu/tambahSepatu','App\Http\Controllers\SepatuController@tambahSepatu'); 
+Route::get('/sepatu/tambahSepatu','App\Http\Controllers\SepatuController@tambahSepatu');
 Route::post('/sepatu/store','App\Http\Controllers\SepatuController@store');
 Route::get('/sepatu/hapus/{id}','App\Http\Controllers\SepatuController@hapus');
 Route::get('/sepatu/editSepatu/{id}','App\Http\Controllers\SepatuController@editSepatu');
 Route::post('/sepatu/update','App\Http\Controllers\SepatuController@update');
 Route::get('/sepatu/cari','App\Http\Controllers\SepatuController@cari');
+Route::get('/sepatu/viewSepatu/{id}','App\Http\Controllers\SepatuController@views');
+
+//route Karyawan
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambahKaryawan','App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/edit/{id}','App\Http\Controllers\KaryawanController@edit');
+Route::post('/karyawan/update','App\Http\Controllers\KaryawanController@update');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
+Route::get('/karyawan/cari','App\Http\Controllers\KaryawanController@cari');
+// Route::get('/karyawan/views/{id}','App\Http\Controllers\KaryawanController@views');

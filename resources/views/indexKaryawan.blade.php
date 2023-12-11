@@ -1,19 +1,19 @@
 @extends('master')
 
-@section('title','Data Pegawai')
+@section('title','Data Karyawan')
 
 @section('konten')
 
 
-	<h3>Data Sepatu</h3>
+	<h3>Data Karyawan</h3>
 
-	<a href="/sepatu/tambahSepatu" class="btn btn-primary"> + Tambah Sepatu Baru</a>
+
 
 	<br/>
     <br>
-    <p>Cari Merk Sepatu: </p>
-	<form action="/sepatu/cari" method="GET">
-		<input class="form-control" type="text" name="cari" placeholder="Cari Merk Sepatu.." value="{{ old('cari') }}"
+    <p>Cari Nama Karyawan: </p>
+	<form action="/karyawan/cari" method="GET">
+		<input class="form-control" type="text" name="cari" placeholder="Cari Nama Karyawan.." value="{{ old('cari') }}"
         value="{{ old("cari", isset($cari) ? $cari : '') }}"> <br>
 		<input class="btn btn-success " type="submit" value="CARI">
 
@@ -22,18 +22,21 @@
 
 	<table class=" table table-striped table-hover">
 		<tr>
-			<th>Kode Sepatu</th>
-			<th>Merk Sepatu</th>
-			<th>Stock Sepatu</th>
-			<th>Ketersediaan</th>
-			<th>Opsi</th>
+            <th>Kode Karyawan</th>
+			<th>Nama Karyawan</th>
+			<th>Divisi</th>
+			<th>Departemen</th>
+            <th>Action</th>
+
 		</tr>
-		@foreach($sepatu as $p)
+		@foreach($karyawan as $p)
 		<tr>
-			<td>{{ $p->sepatu_kodesepatu }}</td>
-			<td>{{ $p->sepatu_merksepatu }}</td>
-			<td>{{ $p->sepatu_stocksepatu }}</td>
-		    <td>
+			<td>{{ $p->karyawan_kodepegawai }}</td>
+
+			<td>{{ $p->karyawan_namalengkap }}</td>
+			<td>{{ $p->karyawan_divisi}}</td>
+            <td>{{ $p->karyawan_departemen}}</td>
+		    {{-- <td>
                     @if ($p->sepatu_tersedia == 'y')
                     <div class="form-check-inline">
                         <label class="form-check-label">
@@ -46,21 +49,23 @@
                           <input type="checkbox" class="form-check-input" value="" disabled>
                         </label>
                       </div>
-                    @endif
+                    @endif --}}
 
 
                   {{-- <input type="checkbox" class="form-check-input " id="tersedia" name="tersedia" value={{ $p->sepatu_tersedia }} checked>
                 </label> --}}
 
 			<td>
-                <a href="/sepatu/viewSepatu/{{ $p->sepatu_kodesepatu }}" class="btn btn-success">View</a>
+                {{-- <a href="/sepatu/viewSepatu/{{ $p->sepatu_kodesepatu }}" class="btn btn-success">View</a> --}}
+
+				<a href="/karyawan/hapus/{{ $p->karyawan_kodepegawai }}" class="btn btn-danger">Hapus</a>
                 |
-				<a href="/sepatu/hapus/{{ $p->sepatu_kodesepatu }}" class="btn btn-danger">Hapus</a>
-                |
-                <a href="/sepatu/editSepatu/{{ $p->sepatu_kodesepatu }}" class="btn btn-warning">Edit</a>
+                <a href="/karyawan/editKaryawan/{{ $p->karyawan_kodepegawai  }}" class="btn btn-warning">Edit</a>
 			</td>
+
+
 		</tr>
 		@endforeach
 	</table>
-    {{-- {{ $pegawai->links() }} --}}
+    <a href="/karyawan/tambahKaryawan" class="btn btn-primary"> + Tambah Karyawan</a>
     @endsection
